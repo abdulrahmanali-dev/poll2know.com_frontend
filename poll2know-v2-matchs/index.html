@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<!-- <html lang="ar" dir="rtl"> -->
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/fontello.css" />
+    <!-- <link rel="stylesheet" href="./css/style.rtl.css" /> -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <title>POLL2KNOW</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Header For Large Screens -->
+    <!-- Mini Nav For Large Screens-->
+    <div class="mini-nav d-none d-lg-flex">
+      <div class="container">
+        <div class="content d-flex justify-content-between align-items-center">
+          <div class="dropdown-group d-flex">
+            <a
+              class="nav-link dropdown-toggle text-light"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              EN
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">العربية</a></li>
+              <li><a class="dropdown-item" href="#">TURKEY</a></li>
+            </ul>
+            <a
+              class="nav-link dropdown-toggle text-light"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Categories
+            </a>
+            <ul class="dropdown-menu text-dark">
+              <li><a class="dropdown-item" href="#"> Art and fun (7) </a></li>
+              <li>
+                <a class="dropdown-item" href="#"> Study and learning (8) </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"> Health and Medical (1) </a>
+              </li>
+              <li><a class="dropdown-item" href="#"> Trading (1) </a></li>
+              <li><a class="dropdown-item" href="#"> Industry (1) </a></li>
+              <li><a class="dropdown-item" href="#"> Sports (4) </a></li>
+              <li><a class="dropdown-item" href="#"> Personal (2) </a></li>
+              <li><a class="dropdown-item" href="#"> Politics (1) </a></li>
+            </ul>
+          </div>
+          <div class="welcomeX text-light">
+            Welcome,
+            <a class="text-light" href="#"
+              >Login/Register
+              <i class="icon-login"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Mini Nav For Large Screens  -->
+    <!-- Start Mini Nav For Small Screens  -->
+    <div class="mini-nav d-flex d-lg-none">
+      <div class="container">
+        <div class="content d-flex justify-content-center align-items-center">
+          <div class="dropdown-group d-flex">
+            <a
+              class="nav-link dropdown-toggle text-light"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              EN
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">العربية</a></li>
+              <li><a class="dropdown-item" href="#">TURKEY</a></li>
+            </ul>
+            <div class="menu-item">
+              <a href="/en/exams">
+                <i class="icon-graduation-cap"></i>
+                Exams
+              </a>
+            </div>
+            <div class="menu-item">
+              <a href="/en/exams">
+                <i class="icon-help-circled"></i>
+                Polls
+              </a>
+            </div>
+            <div class="menu-item">
+              <a href="/en/exams">
+                <i class="icon-smile"></i>
+                Games
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Mini Nav For Small Screens  -->
+
+    <!-- Start Header For large Screens -->
+    <header class="d-none d-lg-block">
+      <div class="container">
+        <div class="content d-flex justify-content-between align-items-center">
+          <div class="logo">
+            <a href="#">
+              <img src="./images/logo.svg" alt="" />
+            </a>
+          </div>
+          <form class="search-box d-flex">
+            <input type="text" placeholder="Search here" />
+            <button type="button">
+              <i class="icon-search"></i>
+            </button>
+          </form>
+          <div class="icons">
+            <button class="btn points">
+              <i class="icon-rss"></i>
+            </button>
+            <div class="my-dropdown-lg send-dropdown-lg">
+              <form action="#">
+                <label>Categories</label>
+                <select name="languages" size="4">
+                  <option>Art and fun</option>
+                  <option>Study and leatning</option>
+                  <option>Healthy and medical</option>
+                  <option>Trading</option>
+                  <option>Industry</option>
+                  <option>Tours</option>
+                  <option>Sport</option>
+                  <option>Peronal</option>
+                  <option>Politics</option>
+                  <option>Cars</option>
+                  <option>Cooking</option>
+                </select>
+                <span class="select-category">Select Catagory</span>
+                <div>
+                  <label for="content-fullname-lg">Name</label>
+                  <input
+                    type="text"
+                    name="content-fullname"
+                    id="content-fullname-lg"
+                  />
+                </div>
+                <div>
+                  <label for="content-email-lg">E-mail</label>
+                  <input
+                    type="text"
+                    name="content-email"
+                    id="content-email-lg"
+                  />
+                </div>
+                <button type="submit" class="btn w-100 rounded-0">SEND</button>
+              </form>
+            </div>
+
+            <button class="btn score">
+              <i class="icon-star-empty"></i>
+            </button>
+
+            <div class="my-dropdown-lg score-dropdown-lg">
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header For Large Screens -->
+    <!-- Start Header For Small Screens -->
+    <header class="d-block d-lg-none small">
+      <div class="container">
+        <div class="content d-flex justify-content-between align-items-center">
+          <div class="menu-toggler">
+            <i class="icon-menu"></i>
+          </div>
+          <div class="logo">
+            <a href="#">
+              <img src="./images/logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="icons">
+            <button class="btn points">
+              <i class="icon-rss"></i>
+            </button>
+            <button class="btn score">
+              <i class="icon-star"></i>
+            </button>
+
+            <div class="my-dropdown score-dropdown">
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+            </div>
+
+            <div class="send-dropdown my-dropdown">
+              <form action="#">
+                <label>Categories</label>
+                <select name="languages" size="4">
+                  <option>Art and fun</option>
+                  <option>Study and leatning</option>
+                  <option>Healthy and medical</option>
+                  <option>Trading</option>
+                  <option>Industry</option>
+                  <option>Tours</option>
+                  <option>Sport</option>
+                  <option>Peronal</option>
+                  <option>Politics</option>
+                  <option>Cars</option>
+                  <option>Cooking</option>
+                </select>
+                <span class="select-category">Select Catagory</span>
+                <div>
+                  <label for="content-fullname-sm">Name</label>
+                  <input
+                    type="text"
+                    name="content-fullname"
+                    id="content-fullname-sm"
+                  />
+                </div>
+                <div>
+                  <label for="content-email-sm">E-mail</label>
+                  <input
+                    type="text"
+                    name="content-email-sm"
+                    id="content-email-sm"
+                  />
+                </div>
+                <button type="submit" class="btn w-100 rounded-0">SEND</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header For Small Screens -->
+    <!-- Start Sidebar -->
+
+    <div class="sidebar">
+      <div class="welcome">
+        Welcome,
+        <a href="#"
+          >Login/Register
+          <i class="icon-login"></i>
+        </a>
+      </div>
+      <a href="/en" class="main-manu"><i class="icon-home"></i> Homepage</a>
+      <a href="/en/exams" class="main-manu"
+        ><i class="icon-graduation-cap"></i> Exams</a
+      >
+      <a href="/en/polls" class="main-manu"
+        ><i class="icon-help-circled"></i> Polls</a
+      >
+      <a href="/en/games" class="main-manu"><i class="icon-smile"></i> Games</a>
+      <a
+        class="main-manu"
+        data-bs-toggle="collapse"
+        href="#homepages"
+        role="button"
+        aria-expanded="true"
+      >
+        <i class="icon-menu"></i>
+        Categories
+      </a>
+      <div class="sub-manu collapse show multi-collapse" id="homepages">
+        <ul class="list-unstyled m-0">
+          <li>
+            <a href="#" class="main-manu">Art and fun (7)</a>
+            <a href="#" class="main-manu">Study and learning (8)</a>
+            <a href="#" class="main-manu">Health and Medical (1)</a>
+            <a href="#" class="main-manu">Trading (1)</a>
+            <a href="#" class="main-manu">Industry (1)</a>
+            <a href="#" class="main-manu">Sports (4)</a>
+            <a href="#" class="main-manu">Personal (2)</a>
+            <a href="#" class="main-manu">Politics (1)</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- End Sidebar -->
+    <div class="search-mobile d-lg-none">
+      <div class="container">
+        <form class="search-box">
+          <input type="text" placeholder="Search here" />
+          <button type="button">
+            <i class="icon-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- MAIN MENU -->
+    <div class="main-menu d-none d-lg-block">
+      <div class="container text-center d-flex justify-content-center">
+        <div class="menu-item">
+          <a href="/en/exams">
+            <i class="icon-graduation-cap"></i>
+            Exams
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="/en/exams">
+            <i class="icon-help-circled"></i>
+            Polls
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="/en/exams">
+            <i class="icon-smile"></i>
+            Games
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- MAIN MENU -->
+    <div class="address-bar">
+      <div class="d-flex lg">
+        <div class="breadcrumb-item">
+          <a href="#">
+            <i class="fas fa-home"></i>
+          </a>
+        </div>
+        <div class="breadcrumb-item">
+          <!-- <i class="fa fa-angle-right"></i> -->
+          <a class="address-link" href="#">Exams</a>
+        </div>
+        <div class="breadcrumb-item">
+          <!-- <i class="fa fa-angle-right"></i> -->
+          <span> Find out if you live a healthy life </span>
+        </div>
+      </div>
+    </div>
+    <section class="page-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-8 articles">
+            <h1 class="title">The game: لعبة مدى تطابق طباعك مع صديقك</h1>
+            <div>
+              <!-- Exam Review -->
+              <div class="game-link" id="game_link">
+                <h4>الآن أرسل الرابط لأصدقائك</h4>
+                <p>
+                  ارسل الرابط بالأسفل لأصدقائك لمعرفة مدى التوافق بينكم!!...
+                  اضغط على الرابط سيتم نسخه آلياً أو شاركه من خلال أزرار
+                  المشاركة
+                </p>
+                <a
+                  href="#"
+                  class="send2friend"
+                  ng-click="copyToClipBoard('#inv_link')"
+                >
+                  <img
+                    src="/images/send2friend.png"
+                    alt="Send the link to friend"
+                  />
+                  <div>الآن أرسل الرابط لأصدقائك</div>
+                </a>
+                <div class="text-center invLink">
+                  <button
+                    class="slidebtn"
+                    ng-click="copyToClipBoard('#inv_link')"
+                  >
+                    <i class="fa fa-link"></i> انسخ الرابط
+                  </button>
+                  <div>
+                    <a href="" ng-click="copyToClipBoard('#inv_link')"
+                      ><i id="inv_link">
+                        https://poll2know.com/ar/game/لعبة-مدى-تطابق-طباعك-مع-صديقك?matchid=130
+                      </i></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shareBar mb-5">
+              <h4><i class="fa fa-share-alt"></i> Share it</h4>
+              <a href="#" class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="#" class="facebook">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#" class="twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="linkedin">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#" class="pinterest">
+                <i class="fab fa-pinterest"></i>
+              </a>
+              <a href="#" class="whatsapp">
+                <i class="fa fa-envelope"></i>
+              </a>
+              <small>Shared: 0</small>
+            </div>
+            <div class="row">
+              <div class="col-12 mt-5 result_div">
+                <h1 class="text-center">
+                  <span>التوافق بين</span>:
+                  <span>asd</span>
+                  <span>و</span>
+                  <span
+                    ><a href="" ng-click="copyToClipBoard('#inv_link')">
+                      <i class="fa fa-circle-o-notch fa-spin fa-fw"></i> الآن
+                      أرسل الرابط لأصدقائك</a
+                    ></span
+                  >
+                  <div class="greenText" style="font-size: 50px">0%</div>
+                </h1>
+              </div>
+              <div class="col-12 result_div">
+                <div class="gauge">
+                  <style>
+                    .google-visualization-tooltip {
+                      font-family: "Jannat" !important;
+                      width: 200px;
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                      padding: 0 !important;
+                      margin: 0 !important;
+                      line-height: 20px !important;
+                    }
+                    .google-visualization-tooltip span {
+                      font-family: "Jannat" !important;
+                      text-overflow: ellipsis !important;
+                    }
+                    .chart {
+                      display: flex;
+                      flex-flow: row wrap;
+                      justify-content: center;
+                      align-items: center;
+                      text-align: center;
+                    }
+                  </style>
+
+                  <script>
+                    var chartsColors = [
+                      "#eba556",
+                      "#7c81e5",
+                      "#87e089",
+                      "#7bb3eb",
+                      "#7a6f8d",
+                      "#ce4472",
+                      "#4c7494",
+                      "#b085b6",
+                      "#6c4c8c",
+                      "#eba556",
+                      "#7c81e5",
+                      "#87e089",
+                      "#7bb3eb",
+                      "#7a6f8d",
+                      "#ce4472",
+                      "#4c7494",
+                      "#b085b6",
+                      "#6c4c8c",
+                    ];
+                  </script>
+                  <!--
+{{chartsObj}}
+<div class="chart" ng-repeat="chartObj in chartsObj">
+<div google-chart chart="chartObj" class="chart"></div>
+</div>
+-->
+                  <div
+                    google-chart=""
+                    chart="chartsObj['0'*1]"
+                    class="chart"
+                    id="0"
+                  >
+                    <table
+                      cellpadding="0"
+                      cellspacing="0"
+                      align="center"
+                      style="border: 0px; padding: 0px; margin: 0px"
+                    >
+                      <tbody>
+                        <tr style="border: 0px; padding: 0px; margin: 0px">
+                          <td
+                            style="
+                              border: 0px;
+                              padding: 0px;
+                              margin: 0px;
+                              width: 240px;
+                            "
+                          >
+                            <div style="position: relative">
+                              <div
+                                dir="ltr"
+                                style="
+                                  position: relative;
+                                  width: 240px;
+                                  height: 240px;
+                                "
+                              >
+                                <div
+                                  style="
+                                    position: absolute;
+                                    left: 0px;
+                                    top: 0px;
+                                    width: 100%;
+                                    height: 100%;
+                                  "
+                                >
+                                  <svg
+                                    width="240"
+                                    height="240"
+                                    aria-label="A chart."
+                                    style="overflow: hidden"
+                                  >
+                                    <defs id="_ABSTRACT_RENDERER_ID_0"></defs>
+                                    <g>
+                                      <circle
+                                        cx="119.5"
+                                        cy="119.5"
+                                        r="108"
+                                        stroke="#333333"
+                                        stroke-width="1"
+                                        fill="#cccccc"
+                                      ></circle>
+                                      <circle
+                                        cx="119.5"
+                                        cy="119.5"
+                                        r="96"
+                                        stroke="#e0e0e0"
+                                        stroke-width="2"
+                                        fill="#f7f7f7"
+                                      ></circle>
+                                      <path
+                                        d="M204.9969169910384,84.79312422241176A92,92,0,0,1,185.0538238691624,185.0538238691624L168.79036790187183,168.79036790187172A69,69,0,0,0,183.7476877432788,93.5948431668088Z"
+                                        stroke="none"
+                                        stroke-width="0"
+                                        fill="#109618"
+                                      ></path>
+                                      <path
+                                        d="M35.003083008961596,84.79312422241179A92,92,0,0,1,204.99691699103838,84.79312422241173L183.7476877432788,93.59484316680883A69,69,0,0,0,56.2523122567212,93.59484316680884Z"
+                                        stroke="none"
+                                        stroke-width="0"
+                                        fill="#ff9900"
+                                      ></path>
+                                      <path
+                                        d="M54.94617613083763,185.0538238691624A92,92,0,0,1,35.003083008961596,84.79312422241179L56.2523122567212,93.59484316680884A69,69,0,0,0,71.20963209812822,168.79036790187178Z"
+                                        stroke="none"
+                                        stroke-width="0"
+                                        fill="#dc3912"
+                                      ></path>
+                                      <text
+                                        text-anchor="middle"
+                                        x="120"
+                                        y="96.4"
+                                        font-family="arial"
+                                        font-size="24"
+                                        stroke="none"
+                                        stroke-width="0"
+                                        fill="#333333"
+                                      >
+                                        التوافق
+                                      </text>
+                                      <text
+                                        text-anchor="start"
+                                        x="72.55313498238266"
+                                        y="171.99686501761735"
+                                        font-family="arial"
+                                        font-size="13"
+                                        stroke="none"
+                                        stroke-width="0"
+                                        fill="#333333"
+                                      >
+                                        0
+                                      </text>
+                                      <text
+                                        text-anchor="start"
+                                        x="58.007683368492636"
+                                        y="98.8719416883025"
+                                        font-family="arial"
+                                        font-size="13"
+                                        stroke="none"
+                                        stroke-width="0"
+                                        fill="#333333"
+                                      >
+                                        25
+                                      </text>
+                                      <text
+                                        text-anchor="middle"
+                                        x="119.99999999999999"
+                                        y="60.44999999999999"
+                                        font-family="arial"
+                                        font-size="13"
+                                        stroke="none"
+                                        stroke-width="0"
+                                        fill="#333333"
+                                      >
+                                        50
+                                      </text>
+                                      <text
+                                        text-anchor="end"
+                                        x="181.99231663150735"
+                                        y="98.87194168830248"
+                                        font-family="arial"
+                                        font-size="13"
+                                        stroke="none"
+                                        stroke-width="0"
+                                        fill="#333333"
+                                      >
+                                        75
+                                      </text>
+                                      <text
+                                        text-anchor="end"
+                                        x="167.4468650176174"
+                                        y="171.9968650176173"
+                                        font-family="arial"
+                                        font-size="13"
+                                        stroke="none"
+                                        stroke-width="0"
+                                        fill="#333333"
+                                      >
+                                        100
+                                      </text>
+                                      <path
+                                        d="M58.75854533577114,175.72543611860925L51.95393926196793,181.91715124289917M56.20150349816466,172.77870635119152L49.112781664627406,178.64300705687947M53.786110277268904,169.7147946569832L46.42901141918766,175.23866072998132M51.51772845006627,166.5405036861564L43.908587166740304,171.711670762396M49.401394391481176,163.26288115848058L41.55710487942352,168.0698679538673M47.44180689236812,159.88920421562204L39.379785435964564,164.32133801735785M45.64331672702103,156.4269632640698L37.38146303002337,160.47440362674422M44.00991699336639,152.88384534455986L35.566574437073754,156.53760593839985M42.545234247286984,149.26771706492246L33.9391491636522,152.51968562769164M41.252520450761295,145.58660713424564L32.50280050084588,148.42956348249515M40.134645751694336,141.84868853713292L31.26071750188258,144.27632059681434M39.19409211147172,138.06226038763373L30.21565790163524,140.06917820848193M38.43294779438473,134.2357295031351L29.369941993760804,135.8174772257057M37.85290273116125,130.37759173912443L28.725447479068052,131.53065748791602M37.45524476689701,126.49641312626557L28.283605296552224,127.21823680696174M37.24085680171743,122.60081085166902L28.045396446352697,122.8897898351878M37.21021483051851,118.69943412658127L28.011349811687225,118.55492680731251M37.36338688613911,114.80094498297285L28.18154098459901,114.22327220330317M37.70003288831113,110.91399904166144L28.55559209812347,109.90444337962383M38.2194053987226,107.04722629466889L29.132672665247327,105.60802921629877M38.92035128051779,103.2092119444808L29.911501422797542,101.34356882720088M39.801314258549354,99.40847734275L30.89034917616594,97.12053038083334M40.86033837469826,95.65346107076527L32.067042638553616,92.94829007862808M42.09507233059014,91.95250020368987L33.43896925621125,88.83611133743318M45.08032005581357,84.74547465841201L36.755911173126194,80.82830517601334M46.82420582865619,81.25541137922451L38.693562031840216,76.95045708802724M48.73056016407348,77.85137077586923L40.8117335156372,73.16818975096581M50.79515047870723,74.54091066975468L43.10572275411914,69.48990074417188M53.01339286575434,71.33138111018323L45.57043651750483,65.92375678909248M55.38036227238628,68.22990805540364L48.20040252487364,62.47767561711515M57.89080343459794,65.24337755120163L50.989781593997705,59.15930839022404M60.53914254520799,62.37842044215635L53.93238060578665,55.97602271350705M63.319499629104556,59.64139764950714L57.021666254560614,52.93488627723016M66.22570159826076,57.03838604831747L60.25077955362306,50.04265116479718M69.25129595753356,54.575164975292836L63.61255106392616,47.30573886143648M72.38956513081652,52.25720339720807L67.09951681201835,44.73022599689786M75.63354137573904,50.08964776843317L70.70393486193227,42.32183085381463M78.97602225379666,48.07731060451776L74.41780250421851,40.0859006716864M82.40958662156552,46.224659797203145L78.23287402396168,38.02739977467016M85.92661110749697,44.53580869458516L82.14067900832995,36.15089854953905M89.51928703770861,43.01450696845281L86.13254115300957,34.4605632982809M93.17963777319315,41.66413228907928L90.19959752577017,32.96014698786587M96.89953641995179,40.48768282594912L94.33281824439088,31.65298091772125M100.67072387273106,39.487770591072376L98.52302652525672,30.541967323413743M104.48482715230193,38.6666156396646L102.76091905811326,29.629572932960656M108.33337799556813,38.026041141069044L107.03708666174236,28.9178234900767M112.20783165722705,37.56746933086498L111.34203517469672,28.408299256516642M116.0995858812416,37.29191835314889L115.66620653471288,28.102131503498754M123.90041411875838,37.29191835314889L124.33379346528709,28.102131503498754M127.79216834277292,37.56746933086497L128.65796482530325,28.408299256516628M131.66662200443184,38.026041141069044L132.9629133382576,28.9178234900767M135.51517284769795,38.66661563966457L137.23908094188664,29.62957293296064M139.3292761272689,39.48777059107236L141.47697347474323,30.54196732341373M143.10046358004817,40.48768282594912L145.66718175560908,31.652980917721237M146.82036222680668,41.66413228907922L149.80040247422966,32.9601469878658M150.48071296229136,43.01450696845281L153.86745884699042,34.46056329828089M154.07338889250295,44.5358086945851L157.85932099166993,36.15089854953901M157.59041337843445,46.224659797203145L161.7671259760383,38.02739977467016M161.02397774620331,48.07731060451775L165.58219749578146,40.085900671686375M164.36645862426087,50.089647768433124L169.29606513806763,42.321830853814575M167.61043486918345,52.25720339720806L172.90048318798162,44.73022599689784M170.74870404246641,54.57516497529282L176.3874489360738,47.30573886143647M173.77429840173923,57.03838604831745L179.7492204463769,50.042651164797164M176.68050037089546,59.641397649507184L182.97833374543941,52.93488627723019M179.460857454792,62.37842044215636L186.06761939421335,55.976022713507064M182.10919656540204,65.24337755120165L189.0102184060023,59.159308390224055M184.61963772761368,68.22990805540356L191.7995974751263,62.47767561711506M186.98660713424562,71.3313811101832L194.42956348249515,65.92375678909245M189.2048495212928,74.54091066975471L196.8942772458809,69.4899007441719M191.2694398359265,77.8513707758692L199.18826648436277,73.16818975096578M193.1757941713438,81.25541137922451L201.3064379681598,76.95045708802724M194.91967994418638,84.74547465841195L203.2440888268738,80.82830517601329M197.90492766940986,91.95250020368988L206.56103074378876,88.83611133743318M199.1396616253017,95.65346107076513L207.93295736144634,92.94829007862793M200.19868574145065,99.40847734274998L209.10965082383404,97.12053038083332M201.0796487194822,103.20921194448077L210.08849857720244,101.34356882720085M201.78059460127741,107.04722629466886L210.86732733475264,105.60802921629873M202.2999671116889,110.91399904166148L211.44440790187653,109.90444337962387M202.6366131138609,114.80094498297287L211.818459015401,114.22327220330318M202.7897851694815,118.69943412658131L211.98865018831276,118.55492680731257M202.75914319828257,122.60081085166891L211.9546035536473,122.88978983518768M202.544755233103,126.49641312626551L211.71639470344778,127.21823680696167M202.14709726883876,130.3775917391244L211.27455252093196,131.530657487916M201.56705220561528,134.23572950313508L210.6300580062392,135.81747722570566M200.80590788852828,138.06226038763376L209.78434209836476,140.06917820848193M199.8653542483057,141.8486885371328L208.73928249811746,144.27632059681423M198.74747954923873,145.58660713424564L207.49719949915414,148.42956348249515M197.454765752713,149.26771706492252L206.06085083634778,152.51968562769167M195.99008300663365,152.88384534455977L204.4334255629263,156.53760593839974M194.35668327297898,156.42696326406974L202.61853696997665,160.47440362674416M192.55819310763195,159.88920421562193L200.6202145640355,164.3213380173577M190.59860560851888,163.26288115848052L198.4428951205765,168.06986795386723M188.48227154993376,166.54050368615634L196.09141283325974,171.71167076239595M186.2138897227311,169.71479465698317L193.57098858081235,175.23866072998132M183.79849650183533,172.77870635119152L190.8872183353726,178.64300705687947M181.24145466422888,175.72543611860922L188.0460607380321,181.91715124289914"
+                                        stroke="#666666"
+                                        stroke-width="1"
+                                        fill-opacity="1"
+                                        fill="none"
+                                      ></path>
+                                      <path
+                                        d="M67.95694090467009,172.0430590953299L54.94617613083763,185.0538238691624M52.002466407169265,91.83449937792943L35.003083008961596,84.79312422241179M119.99999999999999,46.39999999999999L119.99999999999999,28M187.99753359283073,91.8344993779294L204.9969169910384,84.79312422241176M172.04305909532997,172.04305909532985L185.05382386916244,185.0538238691623"
+                                        stroke="#333333"
+                                        stroke-width="2"
+                                        fill-opacity="1"
+                                        fill="none"
+                                      ></path>
+                                      <g>
+                                        <text
+                                          text-anchor="middle"
+                                          x="120"
+                                          y="197.4"
+                                          font-family="arial"
+                                          font-size="24"
+                                          stroke="none"
+                                          stroke-width="0"
+                                          fill="#000000"
+                                        >
+                                          0
+                                        </text>
+                                        <path
+                                          d="M58.48171003677037,181.51828996322965C115.44623232915863,115.44623232915863,137.52210603780264,97.92412629135599,139.79898987322332,100.20101012677667C142.075873708644,102.47789396219734,124.55376767084137,124.55376767084137,58.48171003677037,181.51828996322965"
+                                          stroke="#c63310"
+                                          stroke-width="1"
+                                          fill-opacity="0.7"
+                                          fill="#dc3912"
+                                        ></path>
+                                        <circle
+                                          cx="119.5"
+                                          cy="119.5"
+                                          r="14"
+                                          stroke="#666666"
+                                          stroke-width="1"
+                                          fill="#4684ee"
+                                        ></circle>
+                                      </g>
+                                    </g>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div
+                                aria-hidden="true"
+                                style="
+                                  display: none;
+                                  position: absolute;
+                                  top: 250px;
+                                  left: 250px;
+                                  white-space: nowrap;
+                                  font-family: Arial;
+                                  font-size: 8px;
+                                "
+                              >
+                                -._.-*^*-._.-*^*-._.-
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row answers_compare">
+                  <div class="col-6"><b>asd</b></div>
+                  <div class="col-6"><b>unknown</b></div>
+                  <i class="col-12 mt-3 greenBg">5-0<p>اي لون تفاح تفضل؟</p>
+                  </i>
+                  <div class="col-6 "><img src="//poll2know.com/img/options_photos/thumb/1620903046814.jpg" style="height:120px;" show-img="">  اخضر</div>
+                  <div class="col-6 "><img src="//poll2know.com/img/options_photos/thumb/1620903046814.jpg" style="height:120px;" show-img="">  اخضر</div>
+                  <i class="col-12 mt-3 grayBg"
+                    >1-0
+                    <p>اي فصل تفضل؟</p>
+                  </i>
+                  <div class="col-6">
+                    <img
+                      src="//poll2know.com/img/options_photos/thumb/1626332606203.jpg"
+                      style="height: 120px"
+                      show-img=""
+                    />
+                    الخريف
+                  </div>
+                  <div class="col-6">
+                    <img
+                      src="//poll2know.com/img/options_photos/thumb/think4.jpg"
+                      style="height: 120px"
+                      show-img=""
+                    />
+                  </div>
+                  <i class="col-12 mt-3 grayBg"
+                    >2-0
+                    <p>اي من المأكولات تفضل؟</p>
+                  </i>
+                  <div class="col-6">
+                    <img
+                      src="//poll2know.com/img/options_photos/thumb/1626334423667.jpg"
+                      style="height: 120px"
+                      show-img=""
+                    />
+                    معتدل
+                  </div>
+                  <div class="col-6">
+                    <img
+                      src="//poll2know.com/img/options_photos/thumb/think4.jpg"
+                      style="height: 120px"
+                      show-img=""
+                    />
+                  </div>
+                  <i class="col-12 mt-3 grayBg"
+                    >3-0
+                    <p>اي نوع من الحيوانات الاليفة تفضل؟</p>
+                  </i>
+                  <div class="col-6">
+                    <img
+                      src="//poll2know.com/img/options_photos/thumb/1626334764807.jpg"
+                      style="height: 120px"
+                      show-img=""
+                    />
+                    كلب
+                  </div>
+                  <div class="col-6">
+                    <img
+                      src="//poll2know.com/img/options_photos/thumb/think4.jpg"
+                      style="height: 120px"
+                      show-img=""
+                    />
+                  </div>
+                  <i class="col-12 mt-3 grayBg"
+                    >4-0
+                    <p>كيف تفضل القهوة؟</p>
+                  </i>
+                  <div class="col-6">لا اشرب قهوة</div>
+                  <div class="col-6"></div>
+                  <i class="col-12 mt-3 grayBg"
+                    >5-0
+                    <p>اي لون تفاح تفضل؟</p>
+                  </i>
+                  <div class="col-6">
+                    <img
+                      src="//poll2know.com/img/options_photos/thumb/1620903046814.jpg"
+                      style="height: 120px"
+                      show-img=""
+                    />
+                    اخضر
+                  </div>
+                  <div class="col-6">
+                    <img
+                      src="//poll2know.com/img/options_photos/thumb/think4.jpg"
+                      style="height: 120px"
+                      show-img=""
+                    />
+                  </div>
+                  <i class="col-12 mt-3 grayBg"
+                    >6-0
+                    <p>اي لون من الوان الشعر تفضل؟</p>
+                  </i>
+                  <div class="col-6">بني</div>
+                  <div class="col-6"></div>
+                  <i class="col-12 mt-3 grayBg"
+                    >7-0
+                    <p>اي نوع موسيقى تفضل؟</p>
+                  </i>
+                  <div class="col-6">الأغاني الشعبية</div>
+                  <div class="col-6"></div>
+                  <i class="col-12 mt-3 grayBg"
+                    >8-0
+                    <p>اي نو ع سيارة تفضل؟</p>
+                  </i>
+                  <div class="col-6">
+                    <img
+                      src="//poll2know.com/img/options_photos/thumb/1621883255770.jpg"
+                      style="height: 120px"
+                      show-img=""
+                    />
+                    c
+                  </div>
+                  <div class="col-6">
+                    <img
+                      src="//poll2know.com/img/options_photos/thumb/think4.jpg"
+                      style="height: 120px"
+                      show-img=""
+                    />
+                  </div>
+                  <i class="col-12 mt-3 grayBg"
+                    >9-0
+                    <p>اي من انواع الافلام تفضل؟</p>
+                  </i>
+                  <div class="col-6">رعب</div>
+                  <div class="col-6"></div>
+                  <i class="col-12 mt-3 grayBg"
+                    >10-0
+                    <p>إذا وجدت نقوداً في الشارع ولم يكن احد يراقبك</p>
+                  </i>
+                  <div class="col-6">لا آخذها</div>
+                  <div class="col-6"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 side-bar">
+            <div class="latest-posts">
+              <h4 class="head">Popular Posts</h4>
+              <a href="#" class="post row">
+                <div class="col-4 image">
+                  <img src="./images/1610350761.jpg" alt="" />
+                </div>
+                <div class="col-8">
+                  <h5>Figure out If You Know About Syrian Culture</h5>
+                  <small class="text-muted d-flex">
+                    <span>23 April</span>
+                    <span>10:36</span>
+                    <span>5 shares</span>
+                  </small>
+                </div>
+              </a>
+              <a href="#" class="post row">
+                <div class="col-4 image">
+                  <img src="./images/1612001495.jpg" alt="" />
+                </div>
+                <div class="col-8">
+                  <h5>Figure out If You Know About Syrian Culture</h5>
+                  <small class="text-muted d-flex">
+                    <span>23 April</span>
+                    <span>10:36</span>
+                    <span>5 shares</span>
+                  </small>
+                </div>
+              </a>
+              <a href="#" class="post row">
+                <div class="col-4 image">
+                  <img src="./images/1606331062.jpg" alt="" />
+                </div>
+                <div class="col-8">
+                  <h5>Figure out If You Know About Syrian Culture</h5>
+
+                  <small class="text-muted d-flex">
+                    <span>23 April</span>
+                    <span>10:36</span>
+                    <span>5 shares</span>
+                  </small>
+                </div>
+              </a>
+            </div>
+            <div class="catagories">
+              <h4 class="head">Catagories</h4>
+              <div class="catagory-links">
+                <div class="link d-flex justify-content-between">
+                  <a href="#">Culture</a>
+                  <span>9</span>
+                </div>
+                <div class="link d-flex justify-content-between">
+                  <a href="#">Lifestyle</a>
+                  <span>9</span>
+                </div>
+                <div class="active link d-flex justify-content-between">
+                  <a href="#">Fashion</a>
+                  <span>9</span>
+                </div>
+                <div class="link d-flex justify-content-between">
+                  <a href="#">Food</a>
+                  <span>9</span>
+                </div>
+                <div class="link d-flex justify-content-between">
+                  <a href="#">Travel</a>
+                  <span>9</span>
+                </div>
+              </div>
+            </div>
+            <div class="sponsurships">
+              <div class="sponsure text-center">
+                <a href="https://schoolizer.com/" target="_blank">
+                  <img src="./images/schoolizer.svg" alt="" />
+                  <h2>Schoolizer</h2>
+                  <p>School Managment App</p>
+                </a>
+              </div>
+              <div class="sponsure text-center">
+                <a href="#">
+                  <img src="./images/apostrophe.webp" alt="" />
+                  <h2>Apostrophe</h2>
+                  <p>Training and linguistic center</p>
+                </a>
+              </div>
+              <div class="sponsure text-center">
+                <a href="https://devzonia.com/" target="_blank">
+                  <img src="./images/devzonia.png" alt="" />
+                  <h2>Devzonia</h2>
+                  <p>For Developing Web Applications</p>
+                </a>
+              </div>
+              <div class="sponsure text-center">
+                <a
+                  href="https://api.whatsapp.com/send/?phone=905346346466&text&app_absent=0l"
+                  target="_blank"
+                >
+                  <span
+                    class="icon-medal"
+                    style="font-size: 42px; padding: 20px"
+                  ></span>
+                  <h2>Sponsorship with us</h2>
+
+                  <p>Put your logo and website link here</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Start Footer For lg Screens -->
+    <footer class="lg d-lg-block d-none">
+      <section class="contact">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-12 col-lg-7 d-flex flex-column justify-content-center"
+            >
+              <h3>
+                We are looking at your valuable opinions... they are our guider.
+              </h3>
+              <p>
+                Dear visitors, we eager to develop useful services that meet
+                your needs ... Therefore, we hope we get a little of your
+                valuable time to give us your precious opinion with
+                transparency, or any ideas that shine through your thoughts are
+                valuable information that helps us provide the best ... Thank
+                you
+              </p>
+            </div>
+            <div class="col-12 col-lg-5 pt-sm-0 pt-2">
+              <form class="row align-items-center">
+                <div
+                  class="col-12 inp-group p-0 d-flex justify-content-between"
+                >
+                  <input
+                    class="col-12"
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                  />
+                  <input
+                    class="col-12"
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <textarea
+                  class="col-12"
+                  name="message"
+                  placeholder="Message"
+                  rows="2"
+                ></textarea>
+                <div
+                  class="btn disabled d-flex justify-content-between align-items-center gap-2"
+                >
+                  <i class="icon-paper-plane"></i>
+                  SEND
+                </div>
+                <input
+                  class="code col-2 text-center"
+                  type="text"
+                  placeholder="code"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-lg">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <a href="#">
+                <div class="image">
+                  <img src="./images/logo_negative.svg" alt="" />
+                </div>
+              </a>
+              <p>
+                Educational, entertainment, fun website, we believe that the
+                best way to learn are entertainment and fun ... We wish you have
+                useful and enjoyable time with us.
+              </p>
+              <span>
+                <a class="hover" href="mailto:info@poll2know.com"
+                  >info@poll2know.com</a
+                >
+              </span>
+            </div>
+            <div class="col-2">
+              <h3>Sections</h3>
+              <ul class="list-unstyled">
+                <li><a href="#"> Exams </a></li>
+                <li><a href="#"> Polls </a></li>
+                <li><a href="#"> Catagories </a></li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <h3>Pages</h3>
+              <ul class="list-unstyled">
+                <li><a href="#"> About us</a></li>
+                <li><a href="#"> Privacy policy</a></li>
+                <li><a href="#"> Term Of Use</a></li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <h3>Categories</h3>
+              <ul class="list-unstyled">
+                <li><a href="#"> Art and fun </a></li>
+                <li><a href="#"> Sports </a></li>
+                <li><a href="#"> Politics </a></li>
+                <li><a href="#"> Industry </a></li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <h3>Contact us</h3>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#"
+                    ><i class="icon-whatsapp whatsapp"></i> Whatsapp
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon-facebook-squared facebook"></i>Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon-linkedin-squared linkedin"></i>Linkedin
+                  </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="icon-twitter twitter"></i>Twitter </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="copyrights">
+        2019-2023 POLL2KNOW © All copyrights reserved
+      </div>
+    </footer>
+    <!-- Start Footer For Small Screans -->
+    <footer class="sm d-lg-none">
+      <!-- Start Footer Section -->
+      <div class="footer accordion accordion-flush" id="accordionFlushExample">
+        <div class="container">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button bg-transparent"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                who us
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <div class="image">
+                  <img src="./images/logo_negative.svg" alt="" />
+                </div>
+                <p>
+                  Educational, entertainment, fun website, we believe that the
+                  best way to learn are entertainment and fun ... We wish you
+                  have useful and enjoyable time with us.
+                </p>
+                <span>
+                  <a href="mailto:info@poll2know.com">info@poll2know.com</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed bg-transparent"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Sections
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a href="#"> Exams </a></li>
+                  <li><a href="#"> Polls </a></li>
+                  <li><a href="#"> Catagories </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed bg-transparent"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Pages
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a href="#"> About us</a></li>
+                  <li><a href="#"> Privacy policy</a></li>
+                  <li><a href="#"> Term Of Use</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button
+                class="accordion-button collapsed bg-transparent"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                Categories
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a href="#"> Art and fun </a></li>
+                  <li><a href="#"> Sports </a></li>
+                  <li><a href="#"> Politics </a></li>
+                  <li><a href="#"> Industry </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Start Footer Section -->
+      <section class="contact">
+        <div class="container">
+          <h3 class="m-0">E-mail us</h3>
+          <div class="row">
+            <div class="col-12 col-lg-5 pt-sm-0">
+              <form class="row align-items-center">
+                <div
+                  class="col-12 inp-group p-0 d-sm-flex justify-content-sm-between"
+                >
+                  <input
+                    class="col-12"
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                  />
+                  <input
+                    class="col-12"
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <textarea
+                  class="col-12"
+                  name="message"
+                  placeholder="Message"
+                  rows="2"
+                ></textarea>
+                <div
+                  class="btn d-flex justify-content-between align-items-center gap-2"
+                >
+                  <i class="icon-paper-plane"></i>
+                  SEND
+                </div>
+                <input
+                  class="code col-2 text-center"
+                  type="text"
+                  placeholder="code"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Start Social -->
+      <div class="social-sm">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-8 col-6">
+              <h3>Contact us</h3>
+            </div>
+            <div class="col-sm-4 col-5 m-auto d-flex justify-content-between">
+              <a href="#"><i class="icon-whatsapp whatsapp"></i> </a>
+              <a href="#"> <i class="icon-facebook-squared facebook"></i></a>
+              <a href="#"> <i class="icon-linkedin-squared linkedin"></i></a>
+              <a href="#"> <i class="icon-twitter twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Social -->
+      <!-- Start Copyright -->
+      <div class="copyrights">
+        2019-2023 POLL2KNOW © All copyrights reserved
+      </div>
+      <!-- End Copyright -->
+    </footer>
+    <!-- End Footer For Small Screans -->
+    <div class="mobile-overlay"></div>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/all.min.js"></script>
+  </body>
+</html>

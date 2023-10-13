@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <!-- <html lang="en"> -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/fontello.css" />
+    <link rel="stylesheet" href="./css/style.rtl.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <title>POLL2KNOW</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Header For Large Screens -->
+    <!-- Mini Nav For Large Screens-->
+    <div class="mini-nav d-none d-lg-flex">
+      <div class="container">
+        <div class="content d-flex justify-content-between align-items-center">
+          <div class="dropdown-group d-flex">
+            <a
+              class="nav-link dropdown-toggle text-light"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              EN
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">العربية</a></li>
+              <li><a class="dropdown-item" href="#">TURKEY</a></li>
+            </ul>
+            <a
+              class="nav-link dropdown-toggle text-light"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Categories
+            </a>
+            <ul class="dropdown-menu text-dark">
+              <li><a class="dropdown-item" href="#"> Art and fun (7) </a></li>
+              <li>
+                <a class="dropdown-item" href="#"> Study and learning (8) </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"> Health and Medical (1) </a>
+              </li>
+              <li><a class="dropdown-item" href="#"> Trading (1) </a></li>
+              <li><a class="dropdown-item" href="#"> Industry (1) </a></li>
+              <li><a class="dropdown-item" href="#"> Sports (4) </a></li>
+              <li><a class="dropdown-item" href="#"> Personal (2) </a></li>
+              <li><a class="dropdown-item" href="#"> Politics (1) </a></li>
+            </ul>
+          </div>
+          <div class="welcomeX text-light">
+            Welcome,
+            <a class="text-light" href="#"
+              >Login/Register
+              <i class="icon-login"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Mini Nav For Large Screens  -->
+    <!-- Start Mini Nav For Small Screens  -->
+    <div class="mini-nav d-flex d-lg-none">
+      <div class="container">
+        <div class="content d-flex justify-content-center align-items-center">
+          <div class="dropdown-group d-flex">
+            <a
+              class="nav-link dropdown-toggle text-light"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              EN
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">العربية</a></li>
+              <li><a class="dropdown-item" href="#">TURKEY</a></li>
+            </ul>
+            <div class="menu-item">
+              <a href="/en/exams">
+                <i class="icon-graduation-cap"></i>
+                Exams
+              </a>
+            </div>
+            <div class="menu-item">
+              <a href="/en/exams">
+                <i class="icon-help-circled"></i>
+                Polls
+              </a>
+            </div>
+            <div class="menu-item">
+              <a href="/en/exams">
+                <i class="icon-smile"></i>
+                Games
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Mini Nav For Small Screens  -->
+
+    <!-- Start Header For large Screens -->
+    <header class="d-none d-lg-block">
+      <div class="container">
+        <div class="content d-flex justify-content-between align-items-center">
+          <div class="logo">
+            <a href="#">
+              <img src="./images/logo.svg" alt="" />
+            </a>
+          </div>
+          <form class="search-box d-flex">
+            <input type="text" placeholder="Search here" />
+            <button type="button">
+              <i class="icon-search"></i>
+            </button>
+          </form>
+          <div class="icons">
+            <button class="btn points">
+              <i class="icon-rss"></i>
+            </button>
+            <div class="my-dropdown-lg send-dropdown-lg">
+              <form action="#">
+                <label>Categories</label>
+                <select name="languages" size="4">
+                  <option>Art and fun</option>
+                  <option>Study and leatning</option>
+                  <option>Healthy and medical</option>
+                  <option>Trading</option>
+                  <option>Industry</option>
+                  <option>Tours</option>
+                  <option>Sport</option>
+                  <option>Peronal</option>
+                  <option>Politics</option>
+                  <option>Cars</option>
+                  <option>Cooking</option>
+                </select>
+                <span class="select-category">Select Catagory</span>
+                <div>
+                  <label for="content-fullname-lg">Name</label>
+                  <input
+                    type="text"
+                    name="content-fullname"
+                    id="content-fullname-lg"
+                  />
+                </div>
+                <div>
+                  <label for="content-email-lg">E-mail</label>
+                  <input
+                    type="text"
+                    name="content-email"
+                    id="content-email-lg"
+                  />
+                </div>
+                <button type="submit" class="btn w-100 rounded-0">SEND</button>
+              </form>
+            </div>
+
+            <button class="btn score">
+              <i class="icon-star-empty"></i>
+            </button>
+
+            <div class="my-dropdown-lg score-dropdown-lg">
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header For Large Screens -->
+    <!-- Start Header For Small Screens -->
+    <header class="d-block d-lg-none small">
+      <div class="container">
+        <div class="content d-flex justify-content-between align-items-center">
+          <div class="menu-toggler">
+            <i class="icon-menu"></i>
+          </div>
+          <div class="logo">
+            <a href="#">
+              <img src="./images/logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="icons">
+            <button class="btn points">
+              <i class="icon-rss"></i>
+            </button>
+            <button class="btn score">
+              <i class="icon-star"></i>
+            </button>
+
+            <div class="my-dropdown score-dropdown">
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+            </div>
+
+            <div class="send-dropdown my-dropdown">
+              <form action="#">
+                <label>Categories</label>
+                <select name="languages" size="4">
+                  <option>Art and fun</option>
+                  <option>Study and leatning</option>
+                  <option>Healthy and medical</option>
+                  <option>Trading</option>
+                  <option>Industry</option>
+                  <option>Tours</option>
+                  <option>Sport</option>
+                  <option>Peronal</option>
+                  <option>Politics</option>
+                  <option>Cars</option>
+                  <option>Cooking</option>
+                </select>
+                <span class="select-category">Select Catagory</span>
+                <div>
+                  <label for="content-fullname-sm">Name</label>
+                  <input
+                    type="text"
+                    name="content-fullname"
+                    id="content-fullname-sm"
+                  />
+                </div>
+                <div>
+                  <label for="content-email-sm">E-mail</label>
+                  <input
+                    type="text"
+                    name="content-email-sm"
+                    id="content-email-sm"
+                  />
+                </div>
+                <button type="submit" class="btn w-100 rounded-0">SEND</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header For Small Screens -->
+    <!-- Start Sidebar -->
+
+    <div class="sidebar">
+      <div class="welcome">
+        Welcome,
+        <a href="#"
+          >Login/Register
+          <i class="icon-login"></i>
+        </a>
+      </div>
+      <a href="/en" class="main-manu"><i class="icon-home"></i> Homepage</a>
+      <a href="/en/exams" class="main-manu"
+        ><i class="icon-graduation-cap"></i> Exams</a
+      >
+      <a href="/en/polls" class="main-manu"
+        ><i class="icon-help-circled"></i> Polls</a
+      >
+      <a href="/en/games" class="main-manu"><i class="icon-smile"></i> Games</a>
+      <a
+        class="main-manu"
+        data-bs-toggle="collapse"
+        href="#homepages"
+        role="button"
+        aria-expanded="true"
+      >
+        <i class="icon-menu"></i>
+        Categories
+      </a>
+      <div class="sub-manu collapse show multi-collapse" id="homepages">
+        <ul class="list-unstyled m-0">
+          <li>
+            <a href="#" class="main-manu">Art and fun (7)</a
+            ><a href="#" class="main-manu">Study and learning (8)</a
+            ><a href="#" class="main-manu">Health and Medical (1)</a
+            ><a href="#" class="main-manu">Trading (1)</a
+            ><a href="#" class="main-manu">Industry (1)</a
+            ><a href="#" class="main-manu">Sports (4)</a
+            ><a href="#" class="main-manu">Personal (2)</a
+            ><a href="#" class="main-manu">Politics (1)</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- End Sidebar -->
+    <div class="search-mobile d-lg-none">
+      <div class="container">
+        <form class="search-box">
+          <input type="text" placeholder="Search here" />
+          <button type="button">
+            <i class="icon-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- MAIN MENU -->
+    <div class="main-menu d-none d-lg-block">
+      <div class="container text-center d-flex justify-content-center">
+        <div class="menu-item">
+          <a href="/en/exams">
+            <i class="icon-graduation-cap"></i>
+            Exams
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="/en/exams">
+            <i class="icon-help-circled"></i>
+            Polls
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="/en/exams">
+            <i class="icon-smile"></i>
+            Games
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- MAIN MENU -->
+    <div class="address-bar">
+      <div class="d-flex lg">
+        <div class="breadcrumb-item">
+          <a href="#">
+            <i class="fas fa-home"></i>
+          </a>
+        </div>
+        <div class="breadcrumb-item">
+          <!-- <i class="fa fa-angle-right"></i> -->
+          <a class="address-link" href="#">Exams</a>
+        </div>
+        <div class="breadcrumb-item">
+          <!-- <i class="fa fa-angle-right"></i> -->
+          <span> Find out if you live a healthy life </span>
+        </div>
+      </div>
+    </div>
+    <section class="page-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-8 articles">
+              <div class="main-img">
+                <img src="./images/1606331062.jpg" alt="" />
+              </div>
+              <h1 class="title">Find out if you live a healthy life</h1>
+              <div class="row">
+                <div class="funkyradio col-12 option_style">
+                  <div class="funkyradio-success">
+                    <input
+                      type="radio"
+                      name="poll[options]"
+                      ng-model="poll.options"
+                      value="8310"
+                      id="btn8310"
+                      class="ng-pristine ng-untouched ng-valid ng-empty"
+                    />
+                    <label for="btn8310"
+                      >&nbsp;
+                      <span>
+                        <img
+                          src="./images/1606331062.jpg"
+                          show-img=""
+                          alt="45 دقيقة"
+                        />
+                      </span>
+                      <span
+                        >45 دقيقة
+                        <i class="bordered-small">
+                          <small> (0%)</small>
+                        </i>
+                      </span>
+                      <span class="result-bar" style="max-width: 0%"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="funkyradio col-12 option_style">
+                  <div class="funkyradio-success">
+                    <input
+                      type="radio"
+                      name="poll[options]"
+                      ng-model="poll.options"
+                      value="8311"
+                      id="btn8311"
+                      class="ng-pristine ng-untouched ng-valid ng-empty"
+                    />
+                    <label for="btn8311"
+                      >&nbsp;
+                      <span>
+                        <img
+                          src="./images/1606331062.jpg"
+                          show-img=""
+                          alt="30 دقيقة"
+                        />
+                      </span>
+                      <span
+                        >30 دقيقة
+                        <i class="bordered-small">
+                          <small> (0%)</small>
+                        </i>
+                      </span>
+                      <span class="result-bar" style="max-width: 0%"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="funkyradio col-12 option_style">
+                  <div class="funkyradio-success">
+                    <input
+                      type="radio"
+                      name="poll[options]"
+                      ng-model="poll.options"
+                      value="8312"
+                      id="btn8312"
+                      class="ng-pristine ng-untouched ng-valid ng-empty"
+                    />
+                    <label for="btn8312"
+                      >&nbsp;
+                      <span>
+                        <img
+                          src="./images/1606331062.jpg"
+                          show-img=""
+                          alt="90 دقيقة"
+                        />
+                      </span>
+                      <span
+                        >90 دقيقة
+                        <i class="bordered-small">
+                          <small> (0%)</small>
+                        </i>
+                      </span>
+                      <span class="result-bar" style="max-width: 0%"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="pro-counter">
+                <!-- ngIf: '0' == 0 --><button
+                  type="submit"
+                  ng-if="'0' == 0"
+                  id="btn_poll"
+                  class="btn btn-secondary swipe-to-top ng-scope"
+                >
+                  أرسل التصويت
+                  <span><i class="fa fa-paper-plane"></i></span></button
+                ><!-- end ngIf: '0' == 0 -->
+              </div>
+              <p><strong>ليونيل أندريس ميسي كوتشيتيني </strong></p>
+              <p>
+                ولد ميسي في 24 يونيو سنة 1987 جنوب مدينة روساريو، في مقاطعة «سانتا
+                في»، بالأرجنتين، لوالدين هما خورخي هوراسيو ميسي (مواليد 1958)،
+                عامل في أحد المصانع، وسيليا ماريا كوتشيتيني، عاملة نظافة، وتنحدر
+                عائلة والده من أصول إيطالية، وبالتحديد إلى مدينة أنكونا، التي هاجر
+                منها جده، أنجيلو ميسي، سنة 1883. لديه شقيقين أكبر منه سنًا هما
+                رودريغو وماتياس وكذلك أخت، تُدعى ماريا سول. في سن الخامسة، بدأ
+                ميسي لعب كرة القدم لنادي محلي يدربه والده خورخي يسمى غراندولي. في
+                عام 1995، انتقل ميسي إلى نيولز أولد بويز في مدينة روساريو، مسقط
+                رأسه.
+              </p>
+              <p>
+                اكتشف في ربيعه الحادي عشر أنه يعاني من نقص هرمونات النمو، وأظهر
+                نادي ريفر بليت رغبته في ضم ميسي، لكن إدارته افتقرت إلى المال
+                الكافي لدفع تكاليف علاج حالته، البالغة 900$ شهريًا. استقطب ميسي
+                انتباه كارلوس ريكساش، المدير الرياضي لنادي برشلونة، الذي سمع
+                بموهبته عبر اتصال من أقارب ميسي في لاردة، كتلونيا، فحصلت عائلة
+                ميسي على فرصة لتعرضه على نادي برشلونة، فانتقل مع والده إلى
+                إسبانيا، حيث عرض موهبته على إدارة النادي، فأذهلهم إلى درجة أنهم
+                عرضوا على عائلة ميسي الانتقال إلى إسبانيا مقابل التكفل بمصاريف
+                علاجه. بناءً على هذا، انتقلت العائلة إلى أوروبا وبدأ ميسي يلعب في
+                فرق الشباب في النادي.
+              </p>
+              <p><strong>كريستيانو رونالدو دوس سانتوس أفيرو </strong></p>
+              <p>
+                عندما كان طفلًا، لعب رونالدو مع نادي أندورينها للهواة منذ عام 1992
+                حتى عام 1995، حيث كان يعمل والده وهو رجل المعدات، وقضى بعد ذلك
+                عامين مع ناسيونال ماديرا المحلي. في عام 1997، عندما كان يبلغ من
+                العمر 12 عامًا، ذهب لإجراء التجارب لثلاثة أيام مع نادي سبورتينغ
+                لشبونة، الذي وقع معه مقابل رسوم قدرها 1.500 جنيه إسترليني. انتقل
+                بعد ذلك من ماديرا إلى ألكوشيتشي، بالقرب من لشبونة، للانضمام إلى
+                لاعبي سبورتينغ الشباب الآخرين في أكاديمية كرة القدم بالنادي.
+              </p>
+              <p>
+                في سن 14، اعتقد رونالدو أن لديه القدرة على اللعب بشكل شبه احترافي،
+                ووافقت والدته على التوقف عن تعليمه من أجل التركيز كليًا على كرة
+                القدم. وبينما كان يحظى بشعبية لدى الطلاب الآخرين في المدرسة، فقد
+                طُرد بعد أن ألقى كرسيًا على معلمه، الذي قال إنه «قلل من احترامه».
+                ومع ذلك، بعد عام واحد، تم تشخيص حالته بأنه لديه تسارع في نبضات
+                القلب، وهي حالة كان من الممكن أن تجبره على التخلي عن لعب كرة
+                القدم. خضع رونالدو لعملية جراحية في القلب حيث تم استخدام الليزر
+                لكوي مسارات قلبية متعددة في مسار واحد، مما يغير معدل ضربات قلبه
+                أثناء الراحة. وخرج من المستشفى بعد ساعات من العملية واستأنف
+                التدريب بعد بضعة أيام.
+              </p>
+            <div class="tags">
+              <div class="tag bg-info">#capital</div>
+              <div class="tag bg-info">#capital</div>
+              <div class="tag bg-info">#capital #capital</div>
+              <div class="tag bg-info">#capital</div>
+              <div class="tag bg-info">#capital</div>
+              <div class="tag bg-info">#capital</div>
+              <div class="tag bg-info">#capital #capital</div>
+              <div class="tag bg-info">#capital</div>
+            </div>
+            <div class="q-count"><b>Questions count</b>: 25</div>
+            <div class="shareBar mb-5">
+              <h4><i class="fa fa-share-alt"></i> Share it</h4>
+              <a href="#" class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="#" class="facebook">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#" class="twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="linkedin">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#" class="pinterest">
+                <i class="fab fa-pinterest"></i>
+              </a>
+              <a href="#" class="whatsapp">
+                <i class="fa fa-envelope"></i>
+              </a>
+              <small>Shared: 0</small>
+            </div>
+            <div class="tags">
+              <div class="tag bg-info">
+                <i class="fas fa-tag"></i>
+                information
+              </div>
+              <div class="tag bg-info">
+                <i class="fas fa-tag"></i>
+                information
+              </div>
+            </div>
+            <div class="comments">
+              <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
+                    Add Comment
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                  >
+                    Show Comment
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane add-comment fade show active"
+                  id="pills-home"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab"
+                  tabindex="0"
+                >
+                  <form
+                    id="comments_form"
+                    class="form_style1 row ng-pristine ng-valid"
+                  >
+                    <div class="col-12">
+                      <div>choose emoji fit your status</div>
+                      <div class="emojis">
+                        <!-- ngRepeat: n in range(12) -->
+                        <span ng-repeat="n in range(12)" class="ng-scope">
+                          <a
+                            href="#"
+                            ng-click="rec.comment.comment_useremoji=n+'.svg';"
+                            ng-class="{'selected': n+'.svg' == rec.comment.comment_useremoji}"
+                          >
+                            <img
+                              ng-src="//poll2know.com/img/emojis/1.svg"
+                              style="height: 25px"
+                              src="//poll2know.com/img/emojis/1.svg"
+                            />
+                          </a>
+                        </span>
+                        <!-- end ngRepeat: n in range(12) -->
+                        <span ng-repeat="n in range(12)" class="ng-scope">
+                          <a
+                            href="#"
+                            ng-click="rec.comment.comment_useremoji=n+'.svg';"
+                            ng-class="{'selected': n+'.svg' == rec.comment.comment_useremoji}"
+                            class="selected"
+                          >
+                            <img
+                              ng-src="//poll2know.com/img/emojis/2.svg"
+                              style="height: 25px"
+                              src="//poll2know.com/img/emojis/2.svg"
+                            />
+                          </a>
+                        </span>
+                        <!-- end ngRepeat: n in range(12) -->
+                        <span ng-repeat="n in range(12)" class="ng-scope">
+                          <a
+                            href="#"
+                            ng-click="rec.comment.comment_useremoji=n+'.svg';"
+                            ng-class="{'selected': n+'.svg' == rec.comment.comment_useremoji}"
+                          >
+                            <img
+                              ng-src="//poll2know.com/img/emojis/3.svg"
+                              style="height: 25px"
+                              src="//poll2know.com/img/emojis/3.svg"
+                            />
+                          </a>
+                        </span>
+                        <!-- end ngRepeat: n in range(12) -->
+                        <span ng-repeat="n in range(12)" class="ng-scope">
+                          <a
+                            href="#"
+                            ng-click="rec.comment.comment_useremoji=n+'.svg';"
+                            ng-class="{'selected': n+'.svg' == rec.comment.comment_useremoji}"
+                          >
+                            <img
+                              ng-src="//poll2know.com/img/emojis/4.svg"
+                              style="height: 25px"
+                              src="//poll2know.com/img/emojis/4.svg"
+                            />
+                          </a>
+                        </span>
+                        <!-- end ngRepeat: n in range(12) -->
+                        <span ng-repeat="n in range(12)" class="ng-scope">
+                          <a
+                            href="#"
+                            ng-click="rec.comment.comment_useremoji=n+'.svg';"
+                            ng-class="{'selected': n+'.svg' == rec.comment.comment_useremoji}"
+                          >
+                            <img
+                              ng-src="//poll2know.com/img/emojis/5.svg"
+                              style="height: 25px"
+                              src="//poll2know.com/img/emojis/5.svg"
+                            />
+                          </a>
+                        </span>
+                        <!-- end ngRepeat: n in range(12) -->
+                        <span ng-repeat="n in range(12)" class="ng-scope">
+                          <a
+                            href="#"
+                            ng-click="rec.comment.comment_useremoji=n+'.svg';"
+                            ng-class="{'selected': n+'.svg' == rec.comment.comment_useremoji}"
+                          >
+                            <img
+                              ng-src="//poll2know.com/img/emojis/6.svg"
+                              style="height: 25px"
+                              src="//poll2know.com/img/emojis/6.svg"
+                            />
+                          </a>
+                        </span>
+                        <!-- end ngRepeat: n in range(12) -->
+                        <span ng-repeat="n in range(12)" class="ng-scope">
+                          <a
+                            href="#"
+                            ng-click="rec.comment.comment_useremoji=n+'.svg';"
+                            ng-class="{'selected': n+'.svg' == rec.comment.comment_useremoji}"
+                          >
+                            <img
+                              ng-src="//poll2know.com/img/emojis/7.svg"
+                              style="height: 25px"
+                              src="//poll2know.com/img/emojis/7.svg"
+                            />
+                          </a>
+                        </span>
+                        <!-- end ngRepeat: n in range(12) -->
+                        <span ng-repeat="n in range(12)" class="ng-scope">
+                          <a
+                            href="#"
+                            ng-click="rec.comment.comment_useremoji=n+'.svg';"
+                            ng-class="{'selected': n+'.svg' == rec.comment.comment_useremoji}"
+                          >
+                            <img
+                              ng-src="//poll2know.com/img/emojis/8.svg"
+                              style="height: 25px"
+                              src="//poll2know.com/img/emojis/8.svg"
+                            />
+                          </a>
+                        </span>
+                        <!-- end ngRepeat: n in range(12) -->
+                        <span ng-repeat="n in range(12)" class="ng-scope">
+                          <a
+                            href="#"
+                            ng-click="rec.comment.comment_useremoji=n+'.svg';"
+                            ng-class="{'selected': n+'.svg' == rec.comment.comment_useremoji}"
+                          >
+                            <img
+                              ng-src="//poll2know.com/img/emojis/9.svg"
+                              style="height: 25px"
+                              src="//poll2know.com/img/emojis/9.svg"
+                            />
+                          </a>
+                        </span>
+                        <!-- end ngRepeat: n in range(12) -->
+                        <span ng-repeat="n in range(12)" class="ng-scope">
+                          <a
+                            href="#"
+                            ng-click="rec.comment.comment_useremoji=n+'.svg';"
+                            ng-class="{'selected': n+'.svg' == rec.comment.comment_useremoji}"
+                          >
+                            <img
+                              ng-src="//poll2know.com/img/emojis/10.svg"
+                              style="height: 25px"
+                              src="//poll2know.com/img/emojis/10.svg"
+                            />
+                          </a>
+                        </span>
+                        <!-- end ngRepeat: n in range(12) -->
+                        <span ng-repeat="n in range(12)" class="ng-scope">
+                          <a
+                            href="#"
+                            ng-click="rec.comment.comment_useremoji=n+'.svg';"
+                            ng-class="{'selected': n+'.svg' == rec.comment.comment_useremoji}"
+                          >
+                            <img
+                              ng-src="//poll2know.com/img/emojis/11.svg"
+                              style="height: 25px"
+                              src="//poll2know.com/img/emojis/11.svg"
+                            />
+                          </a>
+                        </span>
+                        <!-- end ngRepeat: n in range(12) -->
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="input text">
+                        <input
+                          type="text"
+                          name="comment_username"
+                          class="form-control ng-pristine ng-untouched ng-valid ng-empty"
+                          placeholder="Name"
+                          ng-model="rec.comment.comment_username"
+                          id="comment-username"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="input text">
+                        <input
+                          type="text"
+                          name="comment_useremail"
+                          class="form-control ng-pristine ng-untouched ng-valid ng-empty"
+                          placeholder="E-mail"
+                          ng-model="rec.comment.comment_useremail"
+                          id="comment-useremail"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="input textarea">
+                        <textarea
+                          name="comment_text"
+                          class="form-control ng-pristine ng-untouched ng-valid ng-empty"
+                          placeholder="Text"
+                          ng-model="rec.comment.comment_text"
+                          id="comment-text"
+                          rows="5"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="mt-2 col-12">
+                      <button
+                        class="btn btn-info"
+                        id="comment_btn"
+                        type="submit"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div
+                  class="tab-pane show-comment fade"
+                  id="pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="pills-profile-tab"
+                  tabindex="0"
+                >
+                  <h5>Comments</h5>
+                  <div class="comment">
+                    <div class="comment-text">Lorem ipsum dolor sit amet.</div>
+                    <span>
+                      <img
+                        ng-src="//poll2know.com/img/emojis/1.svg"
+                        style="height: 25px"
+                        src="//poll2know.com/img/emojis/1.svg"
+                      />
+                      ronaldo
+                    </span>
+                  </div>
+                  <div class="comment">
+                    <div class="comment-text">Lorem ipsum dolor sit amet.</div>
+                    <span>
+                      <img
+                        ng-src="//poll2know.com/img/emojis/1.svg"
+                        style="height: 25px"
+                        src="//poll2know.com/img/emojis/1.svg"
+                      />
+                      ronaldo
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 side-bar">
+            <div class="latest-posts">
+              <h4 class="head">Popular Posts</h4>
+              <a href="#" class="post row">
+                <div class="col-4 image">
+                  <img src="./images/1610350761.jpg" alt="" />
+                </div>
+                <div class="col-8">
+                  <h5>Figure out If You Know About Syrian Culture</h5>
+                  <small class="text-muted d-flex">
+                    <span>23 April</span>
+                    <span>10:36</span>
+                    <span>5 shares</span>
+                  </small>
+                </div>
+              </a>
+              <a href="#" class="post row">
+                <div class="col-4 image">
+                  <img src="./images/1612001495.jpg" alt="" />
+                </div>
+                <div class="col-8">
+                  <h5>Figure out If You Know About Syrian Culture</h5>
+                  <small class="text-muted d-flex">
+                    <span>23 April</span>
+                    <span>10:36</span>
+                    <span>5 shares</span>
+                  </small>
+                </div>
+              </a>
+              <a href="#" class="post row">
+                <div class="col-4 image">
+                  <img src="./images/1606331062.jpg" alt="" />
+                </div>
+                <div class="col-8">
+                  <h5>Figure out If You Know About Syrian Culture</h5>
+
+                  <small class="text-muted d-flex">
+                    <span>23 April</span>
+                    <span>10:36</span>
+                    <span>5 shares</span>
+                  </small>
+                </div>
+              </a>
+            </div>
+            <div class="catagories">
+              <h4 class="head">Catagories</h4>
+              <div class="catagory-links">
+                <div class="link d-flex justify-content-between">
+                  <a href="#">Culture</a>
+                  <span>9</span>
+                </div>
+                <div class="link d-flex justify-content-between">
+                  <a href="#">Lifestyle</a>
+                  <span>9</span>
+                </div>
+                <div class="active link d-flex justify-content-between">
+                  <a href="#">Fashion</a>
+                  <span>9</span>
+                </div>
+                <div class="link d-flex justify-content-between">
+                  <a href="#">Food</a>
+                  <span>9</span>
+                </div>
+                <div class="link d-flex justify-content-between">
+                  <a href="#">Travel</a>
+                  <span>9</span>
+                </div>
+              </div>
+            </div>
+            <div class="sponsurships">
+              <div class="sponsure text-center">
+                <a href="https://schoolizer.com/" target="_blank">
+                  <img src="./images/schoolizer.svg" alt="" />
+                  <h2>Schoolizer</h2>
+                  <p>School Managment App</p>
+                </a>
+              </div>
+              <div class="sponsure text-center">
+                <a href="#">
+                  <img src="./images/apostrophe.webp" alt="" />
+                  <h2>Apostrophe</h2>
+                  <p>Training and linguistic center</p>
+                </a>
+              </div>
+              <div class="sponsure text-center">
+                <a href="https://devzonia.com/" target="_blank">
+                  <img src="./images/devzonia.png" alt="" />
+                  <h2>Devzonia</h2>
+                  <p>For Developing Web Applications</p>
+                </a>
+              </div>
+              <div class="sponsure text-center">
+                <a
+                  href="https://api.whatsapp.com/send/?phone=905346346466&text&app_absent=0l"
+                  target="_blank"
+                >
+                  <span
+                    class="icon-medal"
+                    style="font-size: 42px; padding: 20px"
+                  ></span>
+                  <h2>Sponsorship with us</h2>
+
+                  <p>Put your logo and website link here</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Start Footer For lg Screens -->
+    <footer class="lg d-lg-block d-none">
+      <section class="contact">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-12 col-lg-7 d-flex flex-column justify-content-center"
+            >
+              <h3>
+                We are looking at your valuable opinions... they are our guider.
+              </h3>
+              <p>
+                Dear visitors, we eager to develop useful services that meet
+                your needs ... Therefore, we hope we get a little of your
+                valuable time to give us your precious opinion with
+                transparency, or any ideas that shine through your thoughts are
+                valuable information that helps us provide the best ... Thank
+                you
+              </p>
+            </div>
+            <div class="col-12 col-lg-5 pt-sm-0 pt-2">
+              <form class="row align-items-center">
+                <div
+                  class="col-12 inp-group p-0 d-flex justify-content-between"
+                >
+                  <input
+                    class="col-12"
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                  />
+                  <input
+                    class="col-12"
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <textarea
+                  class="col-12"
+                  name="message"
+                  placeholder="Message"
+                  rows="2"
+                ></textarea>
+                <div
+                  class="btn disabled d-flex justify-content-between align-items-center gap-2"
+                >
+                  <i class="icon-paper-plane"></i>
+                  SEND
+                </div>
+                <input
+                  class="code col-2 text-center"
+                  type="text"
+                  placeholder="code"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-lg">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <a href="#">
+                <div class="image">
+                  <img src="./images/logo_negative.svg" alt="" />
+                </div>
+              </a>
+              <p>
+                Educational, entertainment, fun website, we believe that the
+                best way to learn are entertainment and fun ... We wish you have
+                useful and enjoyable time with us.
+              </p>
+              <span>
+                <a class="hover" href="mailto:info@poll2know.com"
+                  >info@poll2know.com</a
+                >
+              </span>
+            </div>
+            <div class="col-2">
+              <h3>Sections</h3>
+              <ul class="list-unstyled">
+                <li><a href="#"> Exams </a></li>
+                <li><a href="#"> Polls </a></li>
+                <li><a href="#"> Catagories </a></li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <h3>Pages</h3>
+              <ul class="list-unstyled">
+                <li><a href="#"> About us</a></li>
+                <li><a href="#"> Privacy policy</a></li>
+                <li><a href="#"> Term Of Use</a></li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <h3>Categories</h3>
+              <ul class="list-unstyled">
+                <li><a href="#"> Art and fun </a></li>
+                <li><a href="#"> Sports </a></li>
+                <li><a href="#"> Politics </a></li>
+                <li><a href="#"> Industry </a></li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <h3>Contact us</h3>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#"
+                    ><i class="icon-whatsapp whatsapp"></i> Whatsapp
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon-facebook-squared facebook"></i>Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon-linkedin-squared linkedin"></i>Linkedin
+                  </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="icon-twitter twitter"></i>Twitter </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="copyrights">
+        2019-2023 POLL2KNOW © All copyrights reserved
+      </div>
+    </footer>
+    <!-- Start Footer For Small Screans -->
+    <footer class="sm d-lg-none">
+      <!-- Start Footer Section -->
+      <div class="footer accordion accordion-flush" id="accordionFlushExample">
+        <div class="container">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button bg-transparent"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                who us
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <div class="image">
+                  <img src="./images/logo_negative.svg" alt="" />
+                </div>
+                <p>
+                  Educational, entertainment, fun website, we believe that the
+                  best way to learn are entertainment and fun ... We wish you
+                  have useful and enjoyable time with us.
+                </p>
+                <span>
+                  <a href="mailto:info@poll2know.com">info@poll2know.com</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed bg-transparent"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Sections
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a href="#"> Exams </a></li>
+                  <li><a href="#"> Polls </a></li>
+                  <li><a href="#"> Catagories </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed bg-transparent"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Pages
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a href="#"> About us</a></li>
+                  <li><a href="#"> Privacy policy</a></li>
+                  <li><a href="#"> Term Of Use</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button
+                class="accordion-button collapsed bg-transparent"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                Categories
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a href="#"> Art and fun </a></li>
+                  <li><a href="#"> Sports </a></li>
+                  <li><a href="#"> Politics </a></li>
+                  <li><a href="#"> Industry </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Start Footer Section -->
+      <section class="contact">
+        <div class="container">
+          <h3 class="m-0">E-mail us</h3>
+          <div class="row">
+            <div class="col-12 col-lg-5 pt-sm-0">
+              <form class="row align-items-center">
+                <div
+                  class="col-12 inp-group p-0 d-sm-flex justify-content-sm-between"
+                >
+                  <input
+                    class="col-12"
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                  />
+                  <input
+                    class="col-12"
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <textarea
+                  class="col-12"
+                  name="message"
+                  placeholder="Message"
+                  rows="2"
+                ></textarea>
+                <div
+                  class="btn d-flex justify-content-between align-items-center gap-2"
+                >
+                  <i class="icon-paper-plane"></i>
+                  SEND
+                </div>
+                <input
+                  class="code col-2 text-center"
+                  type="text"
+                  placeholder="code"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Start Social -->
+      <div class="social-sm">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-8 col-6">
+              <h3>Contact us</h3>
+            </div>
+            <div class="col-sm-4 col-5 m-auto d-flex justify-content-between">
+              <a href="#"><i class="icon-whatsapp whatsapp"></i> </a>
+              <a href="#"> <i class="icon-facebook-squared facebook"></i></a>
+              <a href="#"> <i class="icon-linkedin-squared linkedin"></i></a>
+              <a href="#"> <i class="icon-twitter twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Social -->
+      <!-- Start Copyright -->
+      <div class="copyrights">
+        2019-2023 POLL2KNOW © All copyrights reserved
+      </div>
+      <!-- End Copyright -->
+    </footer>
+    <!-- End Footer For Small Screans -->
+    <div class="mobile-overlay"></div>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/all.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<!-- <html lang="ar" dir="rtl"> -->
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/fontello.css" />
+    <link rel="stylesheet" href="./css/style.rtl.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <title>POLL2KNOW</title>
+  </head>
+  <body>
+    <!-- Start Header For Large Screens -->
+    <!-- Mini Nav For Large Screens-->
+    <div class="mini-nav d-none d-lg-flex">
+      <div class="container">
+        <div class="content d-flex justify-content-between align-items-center">
+          <div class="dropdown-group d-flex">
+            <a
+              class="nav-link dropdown-toggle text-light"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              EN
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">العربية</a></li>
+              <li><a class="dropdown-item" href="#">TURKEY</a></li>
+            </ul>
+            <a
+              class="nav-link dropdown-toggle text-light"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Categories
+            </a>
+            <ul class="dropdown-menu text-dark">
+              <li><a class="dropdown-item" href="#"> Art and fun (7) </a></li>
+              <li>
+                <a class="dropdown-item" href="#"> Study and learning (8) </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"> Health and Medical (1) </a>
+              </li>
+              <li><a class="dropdown-item" href="#"> Trading (1) </a></li>
+              <li><a class="dropdown-item" href="#"> Industry (1) </a></li>
+              <li><a class="dropdown-item" href="#"> Sports (4) </a></li>
+              <li><a class="dropdown-item" href="#"> Personal (2) </a></li>
+              <li><a class="dropdown-item" href="#"> Politics (1) </a></li>
+            </ul>
+          </div>
+          <div class="welcomeX text-light">
+            Welcome,
+            <a class="text-light" href=""
+              >Login/Register
+              <i class="icon-login"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Mini Nav For Large Screens  -->
+    <!-- Start Mini Nav For Small Screens  -->
+    <div class="mini-nav d-flex d-lg-none">
+      <div class="container">
+        <div class="content d-flex justify-content-center align-items-center">
+          <div class="dropdown-group d-flex">
+            <a
+              class="nav-link dropdown-toggle text-light"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              EN
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">العربية</a></li>
+              <li><a class="dropdown-item" href="#">TURKEY</a></li>
+            </ul>
+            <div class="menu-item">
+              <a href="/en/exams">
+                <i class="icon-graduation-cap"></i>
+                Exams
+              </a>
+            </div>
+            <div class="menu-item">
+              <a href="/en/exams">
+                <i class="icon-help-circled"></i>
+                Polls
+              </a>
+            </div>
+            <div class="menu-item">
+              <a href="/en/exams">
+                <i class="icon-smile"></i>
+                Games
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Mini Nav For Small Screens  -->
+
+    <!-- Start Header For large Screens -->
+    <header class="d-none d-lg-block">
+      <div class="container">
+        <div class="content d-flex justify-content-between align-items-center">
+          <div class="logo">
+            <a href="#">
+              <img src="./images/logo.svg" alt="" />
+            </a>
+          </div>
+          <form class="search-box d-flex">
+            <input type="text" placeholder="Search here" />
+            <button type="button">
+              <i class="icon-search"></i>
+            </button>
+          </form>
+          <div class="icons">
+            <button class="btn points">
+              <i class="icon-rss"></i>
+            </button>
+            <div class="my-dropdown-lg send-dropdown-lg">
+              <form action="#">
+                <label>Categories</label>
+                <select name="languages" size="4">
+                  <option>Art and fun</option>
+                  <option>Study and leatning</option>
+                  <option>Healthy and medical</option>
+                  <option>Trading</option>
+                  <option>Industry</option>
+                  <option>Tours</option>
+                  <option>Sport</option>
+                  <option>Peronal</option>
+                  <option>Politics</option>
+                  <option>Cars</option>
+                  <option>Cooking</option>
+                </select>
+                <span class="select-category">Select Catagory</span>
+                <div>
+                  <label for="content-fullname-lg">Name</label>
+                  <input
+                    type="text"
+                    name="content-fullname"
+                    id="content-fullname-lg"
+                  />
+                </div>
+                <div>
+                  <label for="content-email-lg">E-mail</label>
+                  <input
+                    type="text"
+                    name="content-email"
+                    id="content-email-lg"
+                  />
+                </div>
+                <button type="submit" class="btn w-100 rounded-0">SEND</button>
+              </form>
+            </div>
+
+            <button class="btn score">
+              <i class="icon-star-empty"></i>
+            </button>
+
+            <div class="my-dropdown-lg score-dropdown-lg">
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header For Large Screens -->
+    <!-- Start Header For Small Screens -->
+    <header class="d-block d-lg-none small">
+      <div class="container">
+        <div class="content d-flex justify-content-between align-items-center">
+          <div class="menu-toggler">
+            <i class="icon-menu"></i>
+          </div>
+          <div class="logo">
+            <a href="#">
+              <img src="./images/logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="icons">
+            <button class="btn points">
+              <i class="icon-rss"></i>
+            </button>
+            <button class="btn score">
+              <i class="icon-star"></i>
+            </button>
+
+            <div class="my-dropdown score-dropdown">
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+              <div class="latest-score">
+                <a href="#">
+                  <div class="text-center name">
+                    <img src="./images/crown_2.png" alt="" />
+                    <b>دانية</b>
+                  </div>
+                  <div class="greenText">Score <b>85%</b></div>
+                  <div>Exam اختبار لغة عربية في الاعراب</div>
+                </a>
+              </div>
+            </div>
+
+            <div class="send-dropdown my-dropdown">
+              <form action="#">
+                <label>Categories</label>
+                <select name="languages" size="4">
+                  <option>Art and fun</option>
+                  <option>Study and leatning</option>
+                  <option>Healthy and medical</option>
+                  <option>Trading</option>
+                  <option>Industry</option>
+                  <option>Tours</option>
+                  <option>Sport</option>
+                  <option>Peronal</option>
+                  <option>Politics</option>
+                  <option>Cars</option>
+                  <option>Cooking</option>
+                </select>
+                <span class="select-category">Select Catagory</span>
+                <div>
+                  <label for="content-fullname-sm">Name</label>
+                  <input
+                    type="text"
+                    name="content-fullname"
+                    id="content-fullname-sm"
+                  />
+                </div>
+                <div>
+                  <label for="content-email-sm">E-mail</label>
+                  <input
+                    type="text"
+                    name="content-email-sm"
+                    id="content-email-sm"
+                  />
+                </div>
+                <button type="submit" class="btn w-100 rounded-0">SEND</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header For Small Screens -->
+    <!-- Start Sidebar -->
+
+    <div class="sidebar">
+      <div class="welcome">
+        Welcome,
+        <a href=""
+          >Login/Register
+          <i class="icon-login"></i>
+        </a>
+      </div>
+      <a href="/en" class="main-manu"><i class="icon-home"></i> Homepage</a>
+      <a href="/en/exams" class="main-manu"
+        ><i class="icon-graduation-cap"></i> Exams</a
+      >
+      <a href="/en/polls" class="main-manu"
+        ><i class="icon-help-circled"></i> Polls</a
+      >
+      <a href="/en/games" class="main-manu"><i class="icon-smile"></i> Games</a>
+      <a
+        class="main-manu"
+        data-bs-toggle="collapse"
+        href="#homepages"
+        role="button"
+        aria-expanded="true"
+      >
+        <i class="icon-menu"></i>
+        Categories
+      </a>
+      <div class="sub-manu collapse show multi-collapse" id="homepages">
+        <ul class="list-unstyled m-0">
+          <li class="">
+            <a href="#" class="main-manu">Art and fun (7)</a
+            ><a href="#" class="main-manu">Study and learning (8)</a
+            ><a href="#" class="main-manu">Health and Medical (1)</a
+            ><a href="#" class="main-manu">Trading (1)</a
+            ><a href="#" class="main-manu">Industry (1)</a
+            ><a href="#" class="main-manu">Sports (4)</a
+            ><a href="#" class="main-manu">Personal (2)</a
+            ><a href="#" class="main-manu">Politics (1)</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+      <!-- End Sidebar -->
+      <div class="search-mobile d-lg-none">
+        <div class="container">
+          <form class="search-box">
+            <input type="text" placeholder="Search here" />
+            <button type="button">
+              <i class="icon-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+    <!-- MAIN MENU -->
+    <div class="main-menu d-none d-lg-block">
+      <div class="container text-center d-flex justify-content-center">
+        <div class="menu-item">
+          <a href="/en/exams">
+            <i class="icon-graduation-cap"></i>
+            Exams
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="/en/exams">
+            <i class="icon-help-circled"></i>
+            Polls
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="/en/exams">
+            <i class="icon-smile"></i>
+            Games
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- MAIN MENU -->
+
+    <section class="page-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-8 articles">
+            <h2 class="heading">Latest exams</h2>
+            <div class="row">
+              <a href="#" class="card col-12 col-lg-6 rounded-0 border-0">
+                <img
+                  class="card-img-top rounded-0"
+                  src="./images/1613901135.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <span class="greenText">Learning</span>
+                  <h5 class="card-title">
+                    Figure Out If You Know About Turkish Culture.
+                  </h5>
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    explicabo hic est ipsam vel perspiciatis consequuntur alias.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted d-flex">
+                      <span>by <b>Abdulrahman Ali</b></span>
+                      <span>23 April</span>
+                      <span>10:36</span>
+                      <span>5 shares</span>
+                    </small>
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="card col-12 col-lg-6 rounded-0 border-0">
+                <img
+                  class="card-img-top rounded-0"
+                  src="./images/1606331062.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <span class="greenText">Learning</span>
+                  <h5 class="card-title">
+                    Figure Out If You Know About Turkish Culture.
+                  </h5>
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    explicabo hic est ipsam vel perspiciatis consequuntur alias.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted d-flex">
+                      <span>by <b>Abdulrahman Ali</b></span>
+                      <span>23 April</span>
+                      <span>10:36</span>
+                      <span>5 shares</span>
+                    </small>
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="card col-12 col-lg-6 rounded-0 border-0">
+                <img
+                  class="card-img-top rounded-0"
+                  src="./images/1608472600.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <span class="greenText">Learning</span>
+                  <h5 class="card-title">
+                    Figure Out If You Know About Turkish Culture.
+                  </h5>
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    explicabo hic est ipsam vel perspiciatis consequuntur alias.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted d-flex">
+                      <span>by <b>Abdulrahman Ali</b></span>
+                      <span>23 April</span>
+                      <span>10:36</span>
+                      <span>5 shares</span>
+                    </small>
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="card col-12 col-lg-6 rounded-0 border-0">
+                <img
+                  class="card-img-top rounded-0"
+                  src="./images/1610350761.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <span class="greenText">Learning</span>
+                  <h5 class="card-title">
+                    Figure Out If You Know About Turkish Culture.
+                  </h5>
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    explicabo hic est ipsam vel perspiciatis consequuntur alias.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted d-flex">
+                      <span>by <b>Abdulrahman Ali</b></span>
+                      <span>23 April</span>
+                      <span>10:36</span>
+                      <span>5 shares</span>
+                    </small>
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="card col-12 col-lg-6 rounded-0 border-0">
+                <img
+                  class="card-img-top rounded-0"
+                  src="./images/1612001495.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <span class="greenText">Learning</span>
+                  <h5 class="card-title">
+                    Figure Out If You Know About Turkish Culture.
+                  </h5>
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    explicabo hic est ipsam vel perspiciatis consequuntur alias.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted d-flex">
+                      <span>by <b>Abdulrahman Ali</b></span>
+                      <span>23 April</span>
+                      <span>10:36</span>
+                      <span>5 shares</span>
+                    </small>
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="card col-12 col-lg-6 rounded-0 border-0">
+                <img
+                  class="card-img-top rounded-0"
+                  src="./images/1620929305.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <span class="greenText">Learning</span>
+                  <h5 class="card-title">
+                    Figure Out If You Know About Turkish Culture.
+                  </h5>
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    explicabo hic est ipsam vel perspiciatis consequuntur alias.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted d-flex">
+                      <span>by <b>Abdulrahman Ali</b></span>
+                      <span>23 April</span>
+                      <span>10:36</span>
+                      <span>5 shares</span>
+                    </small>
+                  </p>
+                </div>
+              </a>
+              <div class="latest-polls">
+                <h2 class="heading">Latest polls</h2>
+                <div class="poll pb-4">
+                  <a href="#">
+                    <div class="row">
+                      <div class="col-5 image">
+                        <img src="./images/1610350761.jpg" alt="" />
+                      </div>
+                      <div class="info col-7">
+                        <span class="catagory"> LIFESTYLE </span>
+                        <h4>Figure out if you know about turkish culture</h4>
+                        <p>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Deserunt minima eum sapiente.
+                        </p>
+                        <small class="text-muted d-flex">
+                          <span>by <b>Abdulrahman Ali</b></span>
+                          <span>23 April</span>
+                          <span>10:36</span>
+                          <span>5 shares</span>
+                        </small>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="poll pb-4">
+                  <a href="#">
+                    <div class="row">
+                      <div class="col-5 image">
+                        <img src="./images/1609151653.jpg" alt="" />
+                      </div>
+                      <div class="info col-7">
+                        <span class="catagory"> LIFESTYLE </span>
+                        <h4>Figure out if you know about turkish culture</h4>
+                        <p>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Deserunt minima eum sapiente.
+                        </p>
+                        <small class="text-muted d-flex">
+                          <span>by <b>Abdulrahman Ali</b></span>
+                          <span>23 April</span>
+                          <span>10:36</span>
+                          <span>5 shares</span>
+                        </small>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="poll pb-4">
+                  <a href="#">
+                    <div class="row">
+                      <div class="col-5 image">
+                        <img src="./images/1608472600.jpg" alt="" />
+                      </div>
+                      <div class="info col-7">
+                        <span class="catagory"> LIFESTYLE </span>
+                        <h4>Figure out if you know about turkish culture</h4>
+                        <p>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Deserunt minima eum sapiente.
+                        </p>
+                        <small class="text-muted d-flex">
+                          <span>by <b>Abdulrahman Ali</b></span>
+                          <span>23 April</span>
+                          <span>10:36</span>
+                          <span>5 shares</span>
+                        </small>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="poll pb-4">
+                  <a href="#">
+                    <div class="row">
+                      <div class="col-5 image">
+                        <img src="./images/1606331062.jpg" alt="" />
+                      </div>
+                      <div class="info col-7">
+                        <span class="catagory"> LIFESTYLE </span>
+                        <h4>Figure out if you know about turkish culture</h4>
+                        <p>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Deserunt minima eum sapiente.
+                        </p>
+                        <small class="text-muted d-flex">
+                          <span>by <b>Abdulrahman Ali</b></span>
+                          <span>23 April</span>
+                          <span>10:36</span>
+                          <span>5 shares</span>
+                        </small>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 side-bar">
+            <div class="latest-posts">
+              <h4 class="head">Popular Posts</h4>
+              <a href="" class="post row">
+                <div class="col-4 image">
+                  <img src="./images/1610350761.jpg" alt="" />
+                </div>
+                <div class="col-8">
+                  <h5>Figure out If You Know About Syrian Culture</h5>
+                  <small class="text-muted d-flex">
+                    <span>23 April</span>
+                    <span>10:36</span>
+                    <span>5 shares</span>
+                  </small>
+                </div>
+              </a>
+              <a href="#" class="post row">
+                <div class="col-4 image">
+                  <img src="./images/1612001495.jpg" alt="" />
+                </div>
+                <div class="col-8">
+                  <h5>Figure out If You Know About Syrian Culture</h5>
+                  <small class="text-muted d-flex">
+                    <span>23 April</span>
+                    <span>10:36</span>
+                    <span>5 shares</span>
+                  </small>
+                </div>
+              </a>
+              <a href="#" class="post row">
+                <div class="col-4 image">
+                  <img src="./images/1606331062.jpg" alt="" />
+                </div>
+                <div class="col-8">
+                  <h5>Figure out If You Know About Syrian Culture</h5>
+
+                  <small class="text-muted d-flex">
+                    <span>23 April</span>
+                    <span>10:36</span>
+                    <span>5 shares</span>
+                  </small>
+                </div>
+              </a>
+            </div>
+            <div class="catagories">
+              <h4 class="head">Catagories</h4>
+              <div class="catagory-links">
+                <div class="link d-flex justify-content-between">
+                  <a href="#">Culture</a>
+                  <span>9</span>
+                </div>
+                <div class="link d-flex justify-content-between">
+                  <a href="#">Lifestyle</a>
+                  <span>9</span>
+                </div>
+                <div class="active link d-flex justify-content-between">
+                  <a href="#">Fashion</a>
+                  <span>9</span>
+                </div>
+                <div class="link d-flex justify-content-between">
+                  <a href="#">Food</a>
+                  <span>9</span>
+                </div>
+                <div class="link d-flex justify-content-between">
+                  <a href="#">Travel</a>
+                  <span>9</span>
+                </div>
+              </div>
+            </div>
+            <div class="sponsurships">
+              <div class="sponsure text-center">
+                <a href="https://schoolizer.com/" target="_blank">
+                  <img src="./images/schoolizer.svg" alt="" />
+                  <h2>Schoolizer</h2>
+                  <p>School Managment App</p>
+                </a>
+              </div>
+              <div class="sponsure text-center">
+                <a href="#">
+                  <img src="./images/apostrophe.webp" alt="" />
+                  <h2>Apostrophe</h2>
+                  <p>Training and linguistic center</p>
+                </a>
+              </div>
+              <div class="sponsure text-center">
+                <a href="https://devzonia.com/" target="_blank">
+                  <img src="./images/devzonia.png" alt="" />
+                  <h2>Devzonia</h2>
+                  <p>For Developing Web Applications</p>
+                </a>
+              </div>
+              <div class="sponsure text-center">
+                <a
+                  href="https://api.whatsapp.com/send/?phone=905346346466&text&app_absent=0l"
+                  target="_blank"
+                >
+                  <span
+                    class="icon-medal"
+                    style="font-size: 42px; padding: 20px"
+                  ></span>
+                  <h2>Sponsorship with us</h2>
+
+                  <p>Put your logo and website link here</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Start Footer For lg Screens -->
+    <footer class="lg d-lg-block d-none">
+      <section class="contact">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-12 col-lg-7 d-flex flex-column justify-content-center"
+            >
+              <h3>
+                We are looking at your valuable opinions... they are our guider.
+              </h3>
+              <p>
+                Dear visitors, we eager to develop useful services that meet
+                your needs ... Therefore, we hope we get a little of your
+                valuable time to give us your precious opinion with
+                transparency, or any ideas that shine through your thoughts are
+                valuable information that helps us provide the best ... Thank
+                you
+              </p>
+            </div>
+            <div class="col-12 col-lg-5 pt-sm-0 pt-2">
+              <form class="row align-items-center">
+                <div
+                  class="col-12 inp-group p-0 d-flex justify-content-between"
+                >
+                  <input
+                    class="col-12"
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                  />
+                  <input
+                    class="col-12"
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <textarea
+                  class="col-12"
+                  name="message"
+                  placeholder="Message"
+                  rows="2"
+                ></textarea>
+                <div
+                  class="btn disabled d-flex justify-content-between align-items-center gap-2"
+                >
+                  <i class="icon-paper-plane"></i>
+                  SEND
+                </div>
+                <input
+                  class="code col-2 text-center"
+                  type="text"
+                  placeholder="code"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-lg">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <a href="#">
+                <div class="image">
+                  <img src="./images/logo_negative.svg" alt="" />
+                </div>
+              </a>
+              <p>
+                Educational, entertainment, fun website, we believe that the
+                best way to learn are entertainment and fun ... We wish you have
+                useful and enjoyable time with us.
+              </p>
+              <span>
+                <a class="hover" href="mailto:info@poll2know.com"
+                  >info@poll2know.com</a
+                >
+              </span>
+            </div>
+            <div class="col-2">
+              <h3>Sections</h3>
+              <ul class="list-unstyled">
+                <li><a href="#"> Exams </a></li>
+                <li><a href="#"> Polls </a></li>
+                <li><a href="#"> Catagories </a></li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <h3>Pages</h3>
+              <ul class="list-unstyled">
+                <li><a href="#"> About us</a></li>
+                <li><a href="#"> Privacy policy</a></li>
+                <li><a href="#"> Term Of Use</a></li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <h3>Categories</h3>
+              <ul class="list-unstyled">
+                <li><a href="#"> Art and fun </a></li>
+                <li><a href="#"> Sports </a></li>
+                <li><a href="#"> Politics </a></li>
+                <li><a href="#"> Industry </a></li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <h3>Contact us</h3>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#"><i class="icon-whatsapp"></i> Whatsapp </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon-facebook-squared"></i>Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon-linkedin-squared"></i>Linkedin
+                  </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="icon-twitter"></i>Twitter </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="copyrights">
+        2019-2023 POLL2KNOW © All copyrights reserved
+      </div>
+    </footer>
+    <!-- Start Footer For Small Screans -->
+    <footer class="sm d-lg-none">
+      <!-- Start Footer Section -->
+      <div class="footer accordion accordion-flush" id="accordionFlushExample">
+        <div class="container">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button bg-transparent"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                who us
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <div class="image">
+                  <img src="./images/logo_negative.svg" alt="" />
+                </div>
+                <p>
+                  Educational, entertainment, fun website, we believe that the
+                  best way to learn are entertainment and fun ... We wish you
+                  have useful and enjoyable time with us.
+                </p>
+                <span>
+                  <a href="mailto:info@poll2know.com">info@poll2know.com</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed bg-transparent"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Sections
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a href="#"> Exams </a></li>
+                  <li><a href="#"> Polls </a></li>
+                  <li><a href="#"> Catagories </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed bg-transparent"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Pages
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a href="#"> About us</a></li>
+                  <li><a href="#"> Privacy policy</a></li>
+                  <li><a href="#"> Term Of Use</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button
+                class="accordion-button collapsed bg-transparent"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                Categories
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a href="#"> Art and fun </a></li>
+                  <li><a href="#"> Sports </a></li>
+                  <li><a href="#"> Politics </a></li>
+                  <li><a href="#"> Industry </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Start Footer Section -->
+      <section class="contact">
+        <div class="container">
+          <h3 class="m-0">E-mail us</h3>
+          <div class="row">
+            <div class="col-12 col-lg-5 pt-sm-0">
+              <form class="row align-items-center">
+                <div
+                  class="col-12 inp-group p-0 d-sm-flex justify-content-sm-between"
+                >
+                  <input
+                    class="col-12"
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                  />
+                  <input
+                    class="col-12"
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <textarea
+                  class="col-12"
+                  name="message"
+                  placeholder="Message"
+                  rows="2"
+                ></textarea>
+                <div
+                  class="btn d-flex justify-content-between align-items-center gap-2"
+                >
+                  <i class="icon-paper-plane"></i>
+                  SEND
+                </div>
+                <input
+                  class="code col-2 text-center"
+                  type="text"
+                  placeholder="code"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Start Social -->
+      <div class="social-sm">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-8 col-6">
+              <h3>Contact us</h3>
+            </div>
+            <div class="col-sm-4 col-5 m-auto d-flex justify-content-between">
+              <a href="#"><i class="icon-whatsapp"></i> </a>
+              <a href="#"> <i class="icon-facebook-squared"></i></a>
+              <a href="#"> <i class="icon-linkedin-squared"></i></a>
+              <a href="#"> <i class="icon-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Social -->
+      <!-- Start Copyright -->
+      <div class="copyrights">
+        2019-2023 POLL2KNOW © All copyrights reserved
+      </div>
+      <!-- End Copyright -->
+    </footer>
+    <!-- End Footer For Small Screans -->
+    <div class="mobile-overlay"></div>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

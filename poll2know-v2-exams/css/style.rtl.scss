@@ -1,0 +1,93 @@
+.code {
+  margin-left: 0 !important;
+  margin-right: 40px !important;
+  margin-top: 5px !important;
+}
+
+footer.sm .row form input:first-of-type {
+  &:not(.code) {
+    margin-top: 10px;
+    margin-right: 0 !important;
+  }
+}
+footer.lg .row form input:first-of-type {
+  //   margin-top: 10px;
+  // margin-right: 4.84%;
+  &:not(.code) {
+    margin-right: 0 !important;
+  }
+}
+.page-content {
+  .articles {
+    @media (min-width: 768px) {
+      border-right: none !important ;
+      border-left: 1px solid #eee !important;
+    }
+    .card {
+      @media (min-width: 768px) {
+        border-right: none !important ;
+        border-left: 1px solid #eee !important;
+      }
+    }
+  }
+}
+.my-dropdown-lg {
+  right: 70px !important ;
+}
+
+.my-dropdown,
+.my-dropdown-lg {
+  right: -210px !important;
+}
+
+.score-dropdown-lg {
+  right: -180px !important;
+}
+
+.send-dropdown-lg {
+  right: -240px !important;
+}
+.head {
+  &::before {
+    right: 0 !important;
+  }
+}
+header.small {
+  padding: 5px !important;
+  .logo {
+    position: relative;
+    left: -20px;
+    padding: 0;
+    width: 80px;
+  }
+}
+.search-box {
+  input {
+    padding: 0 10px 0;
+  }
+}
+
+.sidebar {
+  right: -250px !important;
+  &.active {
+    right: 0 !important;
+  }
+}
+
+.accordion-button {
+  &::after {
+    margin-left: 0 !important   ;
+    margin-right: auto !important;
+  }
+}
+
+footer {
+  .contact {
+    h3 {
+      font-size: 23px;
+    }
+    p {
+        font-size: 15px;
+    }
+  }
+}
